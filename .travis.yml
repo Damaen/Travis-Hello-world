@@ -1,5 +1,8 @@
-language: node_js
+language: python
 
-# test on two node.js versions: 0.6 and 0.8
-node_js:
-  - "0.12"
+python:
+ - "3.6"
+
+install: pip install -e .
+
+script: pytest
